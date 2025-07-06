@@ -28,6 +28,43 @@ All libraries are loaded via CDN and require no build tooling.
 
 ---
 
+## 🏁 How to Run the Project
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. **Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)**
+
+   - Sign up and create an API key.
+   - Open [`script.js`](./script.js) and replace the default key:
+
+     ```js
+     const apiKey = "YOUR_API_KEY_HERE";
+     ```
+
+3. **Run the app**
+
+   - Simply open [`index.html`](./index.html) in any modern browser.
+
+   **OR**
+
+   - Run a local server:
+
+     ```bash
+     # With Python 3.x
+     python -m http.server
+
+     # Or use VS Code Live Server extension
+     ```
+
+4. **Search for any city** to get current weather details.
+
+---
+
 ## 📁 Project Structure
 
 ```
