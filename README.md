@@ -1,49 +1,46 @@
-Weather App
-A front-end weather lookup tool that fetches real-time weather data from the OpenWeatherMap API. Built with minimal dependencies and a clean, component-style layout, this app demonstrates practical client-side techniques for interactive UI rendering, data fetching, and conditional asset loading.
+# Weather App
 
-🔍 Techniques Used
-Fetch API for asynchronous HTTP requests to a public REST API.
+A front-end weather lookup tool that fetches real-time weather data from the [OpenWeatherMap API](https://openweathermap.org/current). Built with minimal dependencies and a clean, component-style layout, this app demonstrates practical client-side techniques for interactive UI rendering, data fetching, and conditional asset loading.
 
-DOM manipulation using jQuery for simplified element selection and updates.
+---
 
-Moment.js to format timestamps (moment().format("MMMM Do YYYY, h:mm:ss a")) in a readable way.
+## 🔍 Techniques Used
 
-Dynamic asset loading via JavaScript, based on data values returned from the API.
+- **[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)** for asynchronous HTTP requests to a public REST API.
+- **[DOM manipulation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)** using [jQuery](https://jquery.com/) for simplified element selection and updates.
+- **[Moment.js](https://momentjs.com/)** to format timestamps (`moment().format("MMMM Do YYYY, h:mm:ss a")`) in a readable way.
+- **[Dynamic asset loading](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src)** via JavaScript, based on data values returned from the API.
+- **[CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)** and **[transform hover effects](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)** for basic UI interaction.
+- **[Responsive flexbox layout](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)** for vertically and horizontally centering content.
+- Use of **[external web fonts](https://fonts.google.com/specimen/Montserrat)** via Google Fonts.
 
-CSS transitions and transform hover effects for basic UI interaction.
+---
 
-Responsive flexbox layout for vertically and horizontally centering content.
+## 🧰 Libraries & Technologies
 
-Basic use of external web fonts via Google Fonts.
+- [jQuery 3.6.0](https://code.jquery.com/jquery-3.6.0.min.js) — DOM manipulation and event handling.
+- [Moment.js](https://momentjs.com/downloads/moment.min.js) — Date and time formatting.
+- [Animate.css](https://cdnjs.com/libraries/animate.css) — Fade-in animations.
+- [Font Awesome 5.15.1](https://cdnjs.com/libraries/font-awesome) — Optional icon support.
+- [Google Fonts - Montserrat](https://fonts.google.com/specimen/Montserrat) — UI typography.
 
-🧰 Libraries & Technologies
-These are not complex on their own but are integrated in a way that keeps the code readable and extendable:
+All libraries are loaded via CDN and require no build tooling.
 
-jQuery 3.6.0 — used for DOM manipulation and event handling.
+---
 
-Moment.js — for date formatting.
+## 📁 Project Structure
 
-Animate.css — for fade-in animations.
-
-Font Awesome 5.15.1 — for potential icon use.
-
-Google Fonts - Montserrat — for consistent UI typography.
-
-These are loaded via CDN for quick access and no build step.
-
-📁 Project Structure
-pgsql
-Copy
-Edit
+```
 .
 ├── index.html
 ├── style.css
 ├── script.js
 └── images/
-index.html — The app’s main interface. Links to the CSS, JavaScript, fonts, and external libraries.
+```
 
-style.css — Handles layout, theming, and responsive behavior.
+- [`index.html`](./index.html) — Main HTML file; sets up structure and references external resources.
+- [`style.css`](./style.css) — All UI styling including layout, fonts, colors, and responsive adjustments.
+- [`script.js`](./script.js) — Contains fetch logic, API integration, and weather icon rendering.
+- `images/` — Weather icons used dynamically (`clouds.png`, `clear.png`, etc.) based on the `weather.main` field.
 
-script.js — Contains API interaction logic, DOM updates, and weather-specific display logic.
-
-images/ — Stores weather icons used in response to the API’s weather.main conditions.
+---
