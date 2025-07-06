@@ -40,7 +40,7 @@ All libraries are loaded via CDN and require no build tooling.
 2. **Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)**
 
    - Sign up and create an API key.
-   - Open [`script.js`](./script.js) and replace the default key:
+   - Open [`script.js`](./script.js) and replace the placeholder API key:
 
      ```js
      const apiKey = "YOUR_API_KEY_HERE";
@@ -48,20 +48,23 @@ All libraries are loaded via CDN and require no build tooling.
 
 3. **Run the app**
 
-   - Simply open [`index.html`](./index.html) in any modern browser.
+   Since this is a static frontend project (HTML, CSS, JS), you can run it directly in any modern browser:
 
-   **OR**
+   - Open the `index.html` file by double-clicking it.
 
-   - Run a local server:
+   **Or**, to avoid CORS issues in some browsers when loading from `file://`, serve it using a local development server:
+
+   - With **VS Code Live Server Extension**  
+     (Recommended for professional frontend development)
+
+   - Or with **Node.js http-server**:
 
      ```bash
-     # With Python 3.x
-     python -m http.server
-
-     # Or use VS Code Live Server extension
+     npm install -g http-server
+     http-server .
      ```
 
-4. **Search for any city** to get current weather details.
+4. **Enter a city name** to fetch and display weather information.
 
 ---
 
